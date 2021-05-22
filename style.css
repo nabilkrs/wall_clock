@@ -1,0 +1,148 @@
+*{
+    margin:0 ; 
+    padding:0;
+}
+body{
+    background-color: rgb(32,32,32) ; 
+}
+
+.container{
+    /* border:solid 5px rgb(216,216,216) ; */
+    border-radius:10px ;
+    width:80%;
+    height: 90vh;
+    margin:1% auto ;
+}
+.mainclockbackground{
+    width: 70% ;
+    height: 200px ;
+    margin: 5% auto; 
+ 
+}
+.mainclock{
+ height: 300px;
+  margin:5% auto ;
+ width:300px;
+ background-image: url("https://i.ibb.co/Ms339ZH/fgrefg.png");
+  background-color: transparent ;
+  /* border: solid 1px black ; */
+  border-radius: 100%;
+  position:relative ;
+  background-size: cover ;
+
+}
+.seconds-needle{
+    width:40%;
+    height:5px ;
+    
+    position:absolute ;
+    transform: rotate(-90deg);
+    transform-origin:0;
+    border-radius: 10px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background-size:cover ;
+   background-color: #30110D;   
+}
+.minutes-needle{
+    width:38%;
+    border-radius: 10px;
+    height: 5px ;
+    background-color:#722620 ;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: rotate(-90deg);
+    transform-origin:0;
+    
+}
+.hours-needle{
+    width:30%;
+    border-radius: 10px;
+    height: 5px ;
+    position : absolute ;
+    left:50%;
+    top:50%;
+    transform: rotate(-90deg);
+    transform-origin: 0;
+    background-color: #F2BC94 ;
+}
+.time:not(.time:hover){
+  /* visibility:hidden; */
+    background-color:rgb(32,32,32) ; 
+    font-size: 4vw ;
+    width: 50%;
+    margin:2% auto ;
+    color : rgb(32,32,32) ;
+    border:solid 2px rgb(32,32,32) ;
+    border-radius: 10px;
+    text-align: center ;
+    transition-duration: 1s;
+
+}
+
+.time:hover{
+  /* visibility: visible; */
+    background-color:white ; 
+    font-size: 4vw ;
+    width: 50%;
+    margin:2% auto ;
+    color : rgb(32,32,32) ;
+    border:solid 2px rgb(32,32,32) ;
+    border-radius: 10px;
+    text-align: center ;
+    transition-duration: 1s;
+   
+
+
+}
+
+
+
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #00e676; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }

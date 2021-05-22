@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class=container>
+       
+       
+        <div class="mainclockbackground">
+            <div class="mainclock" onmouseover="myFunction()">
+                <div class="needles">
+                    <div class="seconds-needle"></div>
+                    <div class="minutes-needle"></div>
+                    <div class="hours-needle"></div>
+                </div>
+            </div>
+ <hr>
+ <div class=time>
+    <p class=time>00:00:00</p>
+</div>
+
+        </div>
+
+    </div>
+
+    <div id="snackbar">Created by Nabil Krissane </div>
+</body>
+<script src="main.js"></script>
+<script>
+    function myFunction() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    </script>
+
+</html>
